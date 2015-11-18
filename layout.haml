@@ -1,0 +1,13 @@
+!!! Strict
+%html
+  %head
+    %title= title
+  %body
+    %h1= title
+    = description
+    #chat
+    %form#chatForm{action: "javascript:void(0)"}
+      %input#userInput
+      %input{type: "submit"}
+    %script{src: "/socket.io/socket.io.js"}
+    %script{src: "/js/chat.js"}
